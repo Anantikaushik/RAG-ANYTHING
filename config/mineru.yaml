@@ -1,0 +1,14 @@
+model:
+  base_dir: '${RAG_ANYTHING_DATA:-D:\RAG_ANYTHING_DATA}\mineru\models'
+  source: huggingface
+  vlm:
+    engine: llama-cpp
+    max_concurrency: 1
+
+doclib:
+  data_dir: '${RAG_ANYTHING_DATA:-D:\RAG_ANYTHING_DATA}\mineru\cache'
+  endpoint_path: '${RAG_ANYTHING_DATA:-D:\RAG_ANYTHING_DATA}\mineru\cache\doclib.endpoint.json'
+  sqlite:
+    path: '${RAG_ANYTHING_DATA:-D:\RAG_ANYTHING_DATA}\mineru\cache\doclib.db'
+  log:
+    dir: '${RAG_ANYTHING_DATA:-D:\RAG_ANYTHING_DATA}\mineru\temp'
